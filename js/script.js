@@ -18,7 +18,6 @@ const removeActiveBtn = () => {
   for (const button of buttons) {
     button.classList.remove("active");
   }
- 
 };
 const loadCatagoriesVideo = (id) => {
   fetch(`https://openapi.programming-hero.com/api/phero-tube/category/${id}`)
@@ -45,7 +44,6 @@ const displayCategories = (categories) => {
     btnContainer.append(btnContent);
   });
 };
-
 
 // time formating
 const timeFormat = (seconds) => {
@@ -130,5 +128,3 @@ document.getElementById("search-input").addEventListener("keyup", (e) => {
 
 loadCategories();
 loadVideos();
-
-
